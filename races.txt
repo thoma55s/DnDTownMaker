@@ -1,0 +1,21 @@
+Aasimar
+Arakocra
+Deep Gnome
+Dragonborne
+Earth Genasi
+Fire Genasi
+Goblin
+Goliath
+Half-Elf
+Half-Orc
+Halfling
+Human
+Kobold
+Lythari
+Minotaur
+Mountain Dwarf
+Rock Gnome
+Sea Elf
+Tiefling
+Water Genasi
+Wood Elf
