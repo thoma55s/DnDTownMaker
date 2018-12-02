@@ -1,22 +1,22 @@
 Boccob
 Correlon
-Garl Glittergold
-Gruumsh
-Moradin
 Cthulu
-Nerull
-Pelor
-Yondalla
 Ehlonna
 Erythnul
 Fharlanghn
+Garl Glittergold
+Gruumsh
 Heironeous
 Hextor
 Kord
+Moradin
+Nerull
 Obad-Hai
 Olidammara
+Pelor
+Raven Queen
 Saint Cuthbert
-Wee Jas
-Vecna
-Kord
 Tymora
+Vecna
+Wee Jas
+Yondalla
