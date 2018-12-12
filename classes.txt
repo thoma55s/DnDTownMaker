@@ -5,6 +5,7 @@ Cleric
 Druid
 Fighter
 Monk
+Mystic
 Paladin
 Ranger
 Rogue
