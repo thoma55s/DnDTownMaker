@@ -25,3 +25,6 @@ print("Primarily Populated with: " + getName("races.txt"))
 print("Town Leader is a: " + getName("classes.txt"))
 print("Government: " + getName("governments.txt"))
 print("Population: " + str(getPopulation()))
+print("Quests")
+for x in range(0,3):
+	print(getName("monsterIssues.txt")  + getName("monsters.txt") + "s")
