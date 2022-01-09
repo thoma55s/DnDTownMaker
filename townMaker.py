@@ -16,7 +16,7 @@ else:
 	townPrefix = "dndTownPrefix.txt"
 	townSuffix = "dndTownSuffix.txt"
 	leader = "classes.txt"
-	monsterIssues = "dndMonsterIssues"
+	monsterIssues = "dndMonsterIssues.txt"
 	dieties = "dndDieties.txt"
 def getName(x): #gets a name from a txt file
 	nameArray = []

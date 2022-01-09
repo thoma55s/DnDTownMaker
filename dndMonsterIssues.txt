@@ -3,5 +3,5 @@ The town is being assualted by
 The town is besieged by 
 Villagers have been taken by 
 The town is at war with 
-A neighboring town was destoryed by 
+A neighboring town was destroyed by 
 Has been taken over by 
