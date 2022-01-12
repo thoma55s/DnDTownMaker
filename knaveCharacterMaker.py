@@ -1,19 +1,38 @@
 import random
 
-def getName(x): #gets a name from a txt file
+def getName(*fileNames): #gets a name from a txt file
 	nameArray = []
-	with open(x, "r") as ins:
-		for line in ins:
-			nameArray.append(line)
-	
+	for fileName in fileNames:
+		nameArray.extend(getFile(fileName))
 	randomName = random.randint(0,len(nameArray) - 1)
 	return nameArray[randomName][:-1] # deletes enter character must have blank line at end of txt files
+
+def getFile(fileName):
+	nameArray = []
+	with open(fileName, "r") as ins:
+		for line in ins:
+			nameArray.append(line)
+	return nameArray
+
 
 def rollDice(x):
     return random.randint(1,x)
 
 def getScore():
     return min(rollDice(6),min(rollDice(6), rollDice(6)))
+
+firstNameComplexity = rollDice(3)
+lastNameComplexity = rollDice(2)
+
+firstName = getName("firstNamePrefix.txt")
+for x in range(0, firstNameComplexity):
+	firstName += getName("firstNameSuffix.txt")
+
+lastName = getName("lastNamePrefix.txt")
+for x in range(0, lastNameComplexity):
+	lastName += getName("lastNameSuffix.txt")
+
+print("Name: " + firstName + " " + lastName)
 
 print("Strength: " + str(10 + getScore()))
 print("Dexterity: " + str(10 + getScore()))
