@@ -18,17 +18,23 @@ else:
 	leader = "classes.txt"
 	monsterIssues = "dndMonsterIssues.txt"
 	dieties = "dndDieties.txt"
-def getName(x): #gets a name from a txt file
-	nameArray = []
-	with open(x, "r") as ins:
-		for line in ins:
-			nameArray.append(line)
 	
+def getName(*fileNames): #gets a name from a txt file
+	nameArray = []
+	for fileName in fileNames:
+		nameArray.extend(getFile(fileName))
 	randomName = random.randint(0,len(nameArray) - 1)
 	return nameArray[randomName][:-1] # deletes enter character must have blank line at end of txt files
 
+def getFile(fileName):
+	nameArray = []
+	with open(fileName, "r") as ins:
+		for line in ins:
+			nameArray.append(line)
+	return nameArray
+
 def getTownName(): #gets a prefix and suffix to make a town name
-	return getName(townPrefix) + getName(townSuffix)
+	return getName("prefix.txt", townPrefix) + getName("suffix.txt", townSuffix)
 
 def getPopulation():
 	range = random.randint(0,300)
